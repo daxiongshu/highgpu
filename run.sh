@@ -1,3 +1,4 @@
+pip install -r requirement.txt
 python run.py -g 0 &
 python run.py -g 1 &
 python run.py -g 2 &
