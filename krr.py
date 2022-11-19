@@ -22,3 +22,6 @@ def run():
             krr.fit(x,y)
             del krr
             gc.collect()
+
+if __name__ == '__main__':
+    run()
