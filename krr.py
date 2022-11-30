@@ -1,6 +1,7 @@
 import argparse
 parser = argparse.ArgumentParser(description='Traing gnn')
 parser.add_argument('--gpu','-g',dest='gpu',default=0)
+parser.add_argument('--scale','-s',dest='scale',default=1,type=int)
 args = parser.parse_args()
 print(args)
 
@@ -12,7 +13,7 @@ import gc
 from cuml import KernelRidge
 
 def run():
-    M,N = 20000,1000
+    M,N = 20000//args.scale,1000
     S = 10000000
     x = cupy.random.rand(M,N)
     y = cupy.random.rand(M)
