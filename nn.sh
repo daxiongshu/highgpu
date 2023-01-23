@@ -1,5 +1,5 @@
 pip install -r requirement.txt
-python run.py -g 0 &
-python run.py -g 1 &
-python run.py -g 2 &
-python run.py -g 3 &
+python /highgpu/run.py -g 0 &
+python /highgpu/run.py -g 1 &
+python /highgpu/run.py -g 2 &
+python /highgpu/run.py -g 3 &
